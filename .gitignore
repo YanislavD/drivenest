@@ -1,0 +1,22 @@
+﻿# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Backend (Maven / Java)
+backend/target/
+*.class
+*.log
+HELP.md
+
+# Frontend (Node / Vite)
+frontend/node_modules/
+frontend/dist/
+*.local
