@@ -18,7 +18,7 @@ pickup/return, owners manage the fleet, prices and reports.
 
 | Layer | Technology |
 |---|---|
-| Backend | Java 21, Spring Boot 3 (Web, Data JPA, Security / OAuth2 Resource Server, Validation, Actuator) |
+| Backend | Java 21, Spring Boot 4 (Web, Data JPA, Security / OAuth2 Resource Server, Validation, Actuator) |
 | Database | PostgreSQL on **Supabase** (managed), schema via **Flyway** |
 | Auth | **Supabase Auth** (frontend logs in, gets JWT; Spring validates the JWT via Supabase JWKS) |
 | File storage | Supabase Storage (car images, damage photos) |
@@ -139,7 +139,7 @@ docker compose up --build
 ## Current status
 
 - [x] Repo and folder structure
-- [ ] Spring Boot project generated, connects to local Postgres
+- [x] Spring Boot project generated (Boot 4.1.1, Maven), connects to local Postgres (docker compose, port 5432)
 - [ ] First Flyway migration (all v1 tables + exclusion constraint)
 - [ ] Supabase JWT validation + `/api/me`
 - [ ] Cars CRUD (owner) + availability search
