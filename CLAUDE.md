@@ -140,7 +140,7 @@ docker compose up --build
 
 - [x] Repo and folder structure
 - [x] Spring Boot project generated (Boot 4.1.1, Maven), connects to local Postgres (docker compose, port 5432)
-- [ ] First Flyway migration (all v1 tables + exclusion constraint)
+- [x] First Flyway migration (all v1 tables + exclusion constraint)
 - [ ] Supabase JWT validation + `/api/me`
 - [ ] Cars CRUD (owner) + availability search
 - [ ] Booking with price calculation + concurrency test
